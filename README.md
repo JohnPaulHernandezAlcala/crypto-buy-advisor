@@ -20,7 +20,7 @@ This project also prioritizes ethical crypto awareness—helping users understan
 
 ## Current Working Architecture
 
-![Draft Architecture Diagram](docs/Unofficial AWS Architecture.drawio.png)
+![Draft Architecture Diagram](docs/Unofficial-AWS-Architecture.png)
 > *Official Architecture Diagram coming soon!*
 
 
