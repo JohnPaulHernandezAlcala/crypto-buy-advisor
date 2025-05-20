@@ -18,10 +18,16 @@ This project also prioritizes ethical crypto awareness—helping users understan
 
 ---
 
-## Current Working Architecture
+## Current Working Architecture and Application
 
 ![Draft Architecture Diagram](docs/Unofficial-AWS-Architecture.png)
 > *Official Architecture Diagram coming soon!*
+
+🔗 Live Demo
+
+👉 [Click here to view the hosted MVP frontend](http://crypto-buy-advisor-site.s3-website.us-east-2.amazonaws.com)
+
+> *This version is the static frontend deployed using S3 + IAM best practices; this is the HTTP version for now until CloudFront is implemented.*
 
 
 
