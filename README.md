@@ -18,18 +18,25 @@ This project also prioritizes ethical crypto awareness—helping users understan
 
 ---
 
-## Current Architecture (Day 1)
+## Current Working Architecture
 
-![Architecture Diagram](docs/day1_architecture.png)
+![Draft Architecture Diagram](docs/Unofficial AWS Architecture.drawio.png)
+> *Official Architecture Diagram coming soon!*
+
+
 
 ### Stack (So far):
-- AWS S3 (Landing page hosting)
+- AWS S3 (Landing page hosting and possibly cache for lambda)
+- AWS CloudFront
 - AWS Lambda (scaffolded)
+- Dynamo DB (possibly cache for lambda)
 - API Gateway (planned)
+- AWS WAF
 - AWS Secrets Manager (planned)
 - OpenAI GPT API (planned)
 - CoinGecko API (planned)
 - AWS CodePipeline (GitHub integration)
+- CloudWatch Logs/Alarms
 
 ---
 
@@ -47,7 +54,7 @@ CryptoBuyAdvisor is integrated with AWS CodePipeline to enable continuous delive
 
 I recently passed the AWS Certified Solutions Architect – Associate exam. This project puts those concepts into practice. My goal is to build something intelligent, scalable, and ethically responsible.
 
-This is just Day 1—check back soon for live demos, trust scores, and a GPT-powered crypto advisor.
+Check back soon for live demos, trust scores, and a GPT-powered crypto advisor.
 
 ---
 
