@@ -2,7 +2,7 @@
 # CryptoBuyAdvisor
 
 **An AI-powered crypto insight tool built on the AWS Free Tier.**
-It doesn’t just suggest what to buy—it warns you when to be cautious.
+It doesn’t just suggest what to buy; it warns you when to be cautious!
 
 ---
 
