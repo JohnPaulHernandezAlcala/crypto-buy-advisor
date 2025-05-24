@@ -20,7 +20,7 @@ This project also prioritizes ethical crypto awareness—helping users understan
 
 ## Current Working Architecture and Application
 
-![Architecture Diagram](docs/Official-AWS-Architecture-Version1.4.png)
+![Architecture Diagram](docs/Official-AWS-Architecture-Version1.5.png)
 > *Check out the [original architecture diagram](docs/Unofficial-AWS-Architecture.png) to appreciate the updates!*
 
 🔗 Live Demo
