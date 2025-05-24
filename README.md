@@ -20,39 +20,45 @@ This project also prioritizes ethical crypto awareness—helping users understan
 
 ## Current Working Architecture and Application
 
-![Architecture Diagram](docs/Official-AWS-Architecture-Version1.2.png)
+![Architecture Diagram](docs/Official-AWS-Architecture-Version1.3.png)
 > *Check out the [original architecture diagram](docs/Unofficial-AWS-Architecture.png) to appreciate the updates!*
 
 🔗 Live Demo
 
 👉 [Click here to view the hosted MVP frontend](http://crypto-buy-advisor-site.s3-website.us-east-2.amazonaws.com)
 
-> *This version is the static frontend deployed using S3 + IAM best practices; this is the HTTP version for now until CloudFront is implemented.*
+> *This version is the static frontend deployed using S3 + IAM best practices; this is the HTTP version for now until AWS Amplify is implemented.*
 
 
 
 ### Stack (So far):
 - AWS S3 (Landing page hosting and possibly cache for lambda)
-- AWS CloudFront
+- AWS CloudFront (planned)
 - AWS Lambda (scaffolded)
-- Dynamo DB (possibly cache for lambda)
+- AWS CloudFront (possibly cache for lambda)
 - API Gateway (planned)
-- AWS WAF
+- AWS WAF (planned)
 - AWS Secrets Manager (planned)
 - OpenAI GPT API (planned)
 - CoinGecko API (planned)
 - AWS CodePipeline (GitHub integration)
+- AWS Amplify (GitHub integration)
+- AWS CodeBuild
 - CloudWatch Logs/Alarms
 
 ---
 
 ## DevOps & CI/CD Setup
 
-CryptoBuyAdvisor is integrated with AWS CodePipeline to enable continuous delivery.
+CryptoBuyAdvisor is integrated with AWS CodePipeline (backend) and AWS Amplify (frontend) to enable continuous delivery.
 - GitHub → CodePipeline → Lambda Deployment (planned)
-- Dev workflow is CI-ready for future integration with GitHub Actions or AWS Amplify
+  > *A change to `/backend/lambda_function.py` will automatically trigger redeployment once the pipeline is active.*
+  
+- GitHub → AWS Amplify → Website/App front (planned)
+  > *A change to `/frontend/index.html` will automatically trigger redeployment once the pipeline is active.*
+  
+- Dev workflow is CI-ready for future integration with GitHub Actions
 
-> *A change to `/backend/lambda_function.py` will automatically trigger redeployment once the pipeline is active.*
 
 ---
 
