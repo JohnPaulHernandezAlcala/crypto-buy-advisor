@@ -20,8 +20,8 @@ This project also prioritizes ethical crypto awareness—helping users understan
 
 ## Current Working Architecture and Application
 
-![Draft Architecture Diagram](docs/Unofficial-AWS-Architecture.png)
-> *Official Architecture Diagram coming soon with the help of AWS 2025 enabled on draw.io!*
+![Architecture Diagram](docs/Official-AWS-Architecture.png)
+> *Check out the [original architecture diagram](docs/Unofficial-AWS-Architecture.png) to appreciate the updates!*
 
 🔗 Live Demo
 
