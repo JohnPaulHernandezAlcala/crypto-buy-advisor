@@ -11,7 +11,7 @@ It doesn’t just suggest what to buy; it warns you when to be cautious!
 CryptoBuyAdvisor is a cloud-native application that:
 - Fetches real-time data from public crypto APIs
 - Uses OpenAI’s GPT API to provide natural-language recommendations
-- Alerts users to risky or hype-driven coins (e.g., meme coins)
+- Alerts users to risky or hype-driven coins (e.g., meme coins, cash-grab coins, etc)
 - Is fully serverless and scalable using AWS Free Tier components
 
 This project also prioritizes ethical crypto awareness—helping users understand not just *what* to buy, but *why* they should be cautious.
