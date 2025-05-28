@@ -22,6 +22,7 @@ This project also prioritizes ethical crypto awareness—helping users understan
 
 ![Architecture Diagram](docs/Official-AWS-Architecture-Version1.5.png)
 > *Check out the [original architecture diagram](docs/Unofficial-AWS-Architecture.png) to appreciate the updates!*
+> *Note: WAF is NOT a free tier service, so this was excluded from actual implementation, but it is highly recommend for security!
 
 🔗 Live Demo
 
