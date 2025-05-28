@@ -69,6 +69,14 @@ I recently passed the AWS Certified Solutions Architect – Associate exam. This
 
 Check back soon for live demos, trust scores, and a GPT-powered crypto advisor.
 
+
+---
+
+
+## Projected Cost
+
+Pending
+
 ---
 
 ## Coming Soon
