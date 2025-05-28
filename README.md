@@ -77,7 +77,9 @@ Check back soon for live demos, trust scores, and a GPT-powered crypto advisor.
 
 CryptoBuyAdvisor was designed to stay fully within the AWS Free Tier during MVP development.
 
-You can review the official AWS PricingCalculator estimate here: [AWS Price Estimate (PDF)](./docs/AWS-Pricing-Estimate-05272025.pdf)
+> *Total Price: **$3.28/month**
+
+You can review the official AWS Pricing Calculator estimate here: [AWS Price Estimate (PDF)](./docs/AWS-Pricing-Estimate-05272025.pdf)
 
 ---
 
