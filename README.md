@@ -38,14 +38,14 @@ This project also prioritizes ethical crypto awareness—helping users understan
 - AWS Lambda (scaffolded)
 - AWS CloudFront (possibly cache for lambda)
 - API Gateway (planned)
-- AWS WAF (planned)
+- AWS WAF (wishlist)
 - AWS Secrets Manager (planned)
 - OpenAI GPT API (planned)
 - CoinGecko API (planned)
 - AWS CodePipeline (GitHub integration)
 - AWS Amplify (GitHub integration)
-- AWS CodeBuild
-- CloudWatch Logs/Alarms
+- AWS CodeBuild (GitHub integration)
+- CloudWatch Logs/Alarms (planned)
 
 ---
 
