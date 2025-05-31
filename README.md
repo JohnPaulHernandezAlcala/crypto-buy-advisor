@@ -77,7 +77,15 @@ Check back soon for live demos, trust scores, and a GPT-powered crypto advisor.
 
 CryptoBuyAdvisor was designed to stay fully within the AWS Free Tier during MVP development.
 
-> *Total AWS Services Price: **$3.28/month**
+### AWS
+> AWS Services: $3.28/month
+### GPT: gpt-3.5-turbo-0125 model
+Input: $0.0005 per 1,000 tokens.
+Output: $0.0015 per 1,000 tokens.
+> GPT API: $1.72/month
+
+### Total
+> **$5/month**
 
 You can review the official AWS Pricing Calculator estimate here: [AWS Price Estimate (PDF)](./docs/AWS-Pricing-Estimate-05272025.pdf)
 
