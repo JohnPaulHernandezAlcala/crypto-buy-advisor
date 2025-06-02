@@ -73,7 +73,7 @@ Check back soon for live demos, trust scores, and a GPT-powered crypto advisor.
 ---
 
 
-## Projected Cost
+## Financials
 
 CryptoBuyAdvisor was designed to stay fully within the AWS Free Tier during MVP development.
 
@@ -89,6 +89,9 @@ See working prompt here!
 > **$5/month**
 
 You can review the official AWS Pricing Calculator estimate here: [AWS Price Estimate (PDF)](./docs/AWS-Pricing-Estimate-05272025.pdf)
+
+### Management and Cost Monitoring Services
+MVP designed to stay in the free tier, so management and cost monitioring services (AWS Budgets + SNS, and Cost Anomaly Detection) are free for the scale of this project.
 
 ---
 
