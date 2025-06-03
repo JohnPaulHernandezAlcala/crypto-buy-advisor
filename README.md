@@ -93,7 +93,7 @@ You can review the official AWS Pricing Calculator estimate here: [AWS Price Est
 ### Management and Cost Monitoring Services
 Tools used:
 - AWS Budget
-- AWS Cost Anomaly Detection
+- AWS Cost Anomaly Detection (excluded because AWS Budget + Cost Explorer sufficient for MVP)
 - Cost Explorer
 
 MVP designed to stay in the free tier, so management and cost monitioring services (AWS Budgets + SNS, and Cost Anomaly Detection) are free for the scale of this project.
