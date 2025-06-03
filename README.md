@@ -92,7 +92,7 @@ You can review the official AWS Pricing Calculator estimate here: [AWS Price Est
 
 ### Management and Cost Monitoring Services
 Tools used:
-- AWS Budgets
+- AWS Budget
 - AWS Cost Anomaly Detection
 - Cost Explorer
 
