@@ -95,6 +95,7 @@ Tools used:
 - AWS Budgets
 - AWS Cost Anomaly Detection
 - Cost Explorer
+
 MVP designed to stay in the free tier, so management and cost monitioring services (AWS Budgets + SNS, and Cost Anomaly Detection) are free for the scale of this project.
 
 ---
