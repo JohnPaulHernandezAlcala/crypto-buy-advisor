@@ -22,7 +22,13 @@ This project also prioritizes ethical crypto awareness—helping users understan
 
 ![Architecture Diagram](docs/Official-MVP-AWS-Architecture-Version1.png)
 > *Check out the [original architecture diagram](docs/Unofficial-AWS-Architecture.png) to appreciate the updates!*
-> *Note: WAF is NOT a free tier service (and pricy), so this was excluded from MVP, but it is highly recommend for security! Also services are outside of a VPC since app is making calls to public APIs.
+
+Notes about this diagram:
+- Region us-east-1 chosen because all AWS services are guaranteed to be available (even though I am located in Texas)
+- WAF is NOT a free tier service (and pricy), so this was excluded from MVP, but it is highly recommend for security! 
+- Services are outside of a VPC since app is making calls to public APIs.
+
+
 
 🔗 Live Demo
 
