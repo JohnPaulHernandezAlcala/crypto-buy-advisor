@@ -19,6 +19,18 @@ v2.0.0 → Big major update
 ## [Unreleased]
 - 
 
+
+## [0.2.0] - 2025-06-06
+
+### Added
+- CodePipeline pipeline built
+- CodeBuild project created
+- requirements.txt added to /backend
+- buildspec.yml added to /backend
+
+
+---
+
 ## [0.1.0] - 2025-06-05
 ### Removed
 - S3 bucket used for static website hosting.
