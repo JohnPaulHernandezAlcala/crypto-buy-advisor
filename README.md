@@ -38,19 +38,18 @@ Notes about this diagram:
 
 
 ### Stack (So far):
-- AWS S3 (Landing page hosting and possibly cache for lambda)
-- AWS CloudFront (planned)
+- AWS S3 (cloudwatch logs)
 - AWS Lambda (scaffolded)
 - AWS CloudFront (possibly cache for lambda)
 - API Gateway (planned)
-- AWS WAF (wishlist)
 - AWS Secrets Manager (planned)
 - OpenAI GPT API (planned)
 - CoinGecko API (planned)
 - AWS CodePipeline (GitHub integration)
-- AWS Amplify (GitHub integration)
+✔️ AWS Amplify (GitHub integration)
 - AWS CodeBuild (GitHub integration)
 - CloudWatch Logs/Alarms (planned)
+- AWS WAF (wishlist)
 
 ---
 
@@ -61,7 +60,7 @@ CryptoBuyAdvisor is integrated with AWS CodePipeline (backend) and AWS Amplify (
   > *A change to `/backend/lambda_function.py` will automatically trigger redeployment once the pipeline is active.*
   
 - GitHub → AWS Amplify → Website/App front (planned)
-  > *A change to `/frontend/index.html` will automatically trigger redeployment once the pipeline is active.*
+  > *A change to `/frontend/index.html` will automatically trigger redeployment.*
   
 - Dev workflow is CI-ready for future integration with GitHub Actions
 
