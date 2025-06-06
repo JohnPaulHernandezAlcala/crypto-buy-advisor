@@ -32,9 +32,8 @@ Notes about this diagram:
 
 🔗 Live Demo
 
-👉 [Click here to view the hosted MVP frontend](http://crypto-buy-advisor-site.s3-website.us-east-2.amazonaws.com)
+👉 [Click here to view the hosted MVP frontend]([http://crypto-buy-advisor-site.s3-website.us-east-2.amazonaws.com](https://main.d12k8nnoyk6p4v.amplifyapp.com/))
 
-> *This version is the static frontend deployed using S3 + IAM best practices; this is the HTTP version for now until AWS Amplify is implemented.*
 
 
 
