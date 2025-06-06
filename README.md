@@ -46,7 +46,7 @@ Notes about this diagram:
 - OpenAI GPT API (planned)
 - CoinGecko API (planned)
 - AWS CodePipeline (GitHub integration)
-✔️ AWS Amplify (GitHub integration)
+- ✔️ AWS Amplify (GitHub integration)
 - AWS CodeBuild (GitHub integration)
 - CloudWatch Logs/Alarms (planned)
 - AWS WAF (wishlist)
