@@ -1,0 +1,15 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      python: 3.13
+    commands:
+      - cd backend
+      - pip install --upgrade pip
+      - pip install -r requirements.txt --target package
+    build:
+      - cp -r *.py package/
+      - cd package && zip -r ../function.zip .
+    artifacts:
+      files:
+        - backend/function.zip
