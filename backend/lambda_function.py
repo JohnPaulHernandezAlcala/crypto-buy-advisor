@@ -10,7 +10,8 @@ Planned functionality:
 """
 
 def lambda_handler(event, context):
+    # TODO implement
     return {
         'statusCode': 200,
-        'body': 'CryptoBuyAdvisor Lambda placeholder: GPT-powered logic coming soon.'
+        'body': json.dumps('Hello from CyrptoBuyAdvisor')
     }
