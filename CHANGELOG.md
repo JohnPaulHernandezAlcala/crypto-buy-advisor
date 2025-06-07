@@ -27,6 +27,7 @@ v2.0.0 → Big major update
 - CodeBuild project created
 - requirements.txt added to /backend
 - buildspec.yml added to /backend
+- STRUGGLE_LOG.md added to root
 
 
 ---
