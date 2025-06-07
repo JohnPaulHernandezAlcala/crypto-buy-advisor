@@ -2,14 +2,18 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      python: 3.13
+      python: 3.13    # ➊ Use Python 3.13
     commands:
-      - cd backend
-      - pip install --upgrade pip
-      - pip install -r requirements.txt --target package
-    build:
-      - cp -r *.py package/
-      - cd package && zip -r ../function.zip .
-    artifacts:
-      files:
-        - backend/function.zip
+      - pwd           # Print the working directory
+      - ls -la        # List all files/folders 
+      - cd backend    # Go inside the /backend folder 
+      - pip install --upgrade pip   # Update pip 
+      - pip install -r requirements.txt --target package   # Install all packages into a folder named "package/"
+  build:
+    commands:
+      - cp -r *.py package/   # Copy all Python files (*.py) into "package/"
+      - cd package            # Move into "package/" folder
+      - zip -r ../function.zip .   # Zip everything (.) into a zip one level up `../function.zip`
+artifacts:
+  files:
+    - function.zip    # Upload the `function.zip` as the build output
