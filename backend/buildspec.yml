@@ -8,6 +8,7 @@ phases:
       - ls -la        # List all files/folders 
       - cd backend    # Go inside the /backend folder 
       - pip install --upgrade pip   # Update pip 
+      - mkdir package  # Make "package/" 
       - cp lambda_function.py package/   # Copy lambda function script into "package/"
       - pip install -r requirements.txt --target package   # Install all packages into a folder named "package/"
   build:
