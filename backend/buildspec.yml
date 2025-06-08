@@ -15,9 +15,8 @@ phases:
     commands:
       - cd package            # Move into "package/" folder
       - zip -r function.zip *   # Zip everything (*) into a zip but not the "package/" directory or top-level folder
-      - ls -la        # List all files/folders 
+      - unzip -l function.zip
       - mv function.zip ..      # Move zip to backend/
-      - ls -la        # List all files/folders 
 artifacts:
   files:
     - backend/function.zip    # Tell CodeBuild where zip files is and to upload as the build output
