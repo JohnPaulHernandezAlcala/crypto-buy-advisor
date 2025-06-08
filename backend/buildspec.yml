@@ -11,10 +11,10 @@ phases:
       - pip install -r requirements.txt --target package   # Install all packages into a folder named "package/"
   build:
     commands:
-      - cp -r *.py package/   # Copy all Python files (*.py) into "package/"
+      - cp lambda_function.py package/   # Copy lambda function script into "package/"
       - cd package            # Move into "package/" folder
       - zip -r function.zip .   # Zip everything (.) into a zip 
       - mv function.zip ..      # Move zip to backend/
 artifacts:
   files:
-    - backend/function.zip    # Upload the `function.zip` as the build output
+    - backend/function.zip    # Tell CodeBuild where zip files is and to upload as the build output
