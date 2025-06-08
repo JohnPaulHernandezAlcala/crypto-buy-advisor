@@ -17,4 +17,4 @@ phases:
       - mv function.zip ..      # Move zip to backend/
 artifacts:
   files:
-    - function.zip    # Upload the `function.zip` as the build output
+    - backend/function.zip    # Upload the `function.zip` as the build output
