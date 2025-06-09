@@ -26,6 +26,7 @@ Lessons Learned:
 - ZIP can cause silent permissions errors
 - CodePipe needs to find files relative to the repo root
 - Difference between "zip -r function.zip ." and "zip -r function.zip *" is latter excludes zip directory
+- Lambda FUnction Console UI doesn't display zipped lambda_function.py
 
 ----
 
