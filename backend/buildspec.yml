@@ -21,7 +21,7 @@ phases:
       #- cd package            # Move into "package/" folder
       #- zip -r function.zip *   # Zip everything (*) into a zip but not the "package/" directory or top-level folder
       #- ls -la        # List all files/folders 
-      - mv function.zip ..      # Move zip to backend/
+      #- mv function.zip ..      # Move zip to backend/
       - cd ..
       - ls -la        # List all files/folders 
       #- mv function.zip ..      # Move zip to backend/
