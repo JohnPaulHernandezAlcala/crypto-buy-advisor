@@ -19,6 +19,12 @@ v2.0.0 → Big major update
 ## [Unreleased]
 - 
 
+## [0.2.1] - 2025-06-09
+
+### Added
+- byildspec.yml edited to correct import error for lambda_function.py in lambda function
+
+---
 
 ## [0.2.0] - 2025-06-06
 
