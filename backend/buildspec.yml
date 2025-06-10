@@ -24,11 +24,11 @@ phases:
       - mv function.zip ..      # Move zip to backend/
       - cd ..
       - ls -la        # List all files/folders 
-      #- mv function.zip ..      # Move zip to backend/
-      #- cd ..
-      #- ls -la        # List all files/folders 
+      - mv function.zip ..      # Move zip to backend/
+      - cd ..
+      - ls -la        # List all files/folders 
       #- mv function.zip ..
       
 artifacts:
   files:
-    - backend/function.zip    # Tell CodeBuild where zip files is and to upload as the build output 
+    - function.zip    # Tell CodeBuild where zip files is and to upload as the build output 
