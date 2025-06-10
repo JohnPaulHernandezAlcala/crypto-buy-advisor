@@ -13,7 +13,7 @@ phases:
       - mv requirements.txt package/
       - cd package/
       - mkdir packages
-      - pip install -r requirements.txt --target packages   # Install all packages into a folder named "package/"
+      #- pip install -r requirements.txt --target packages   # Install all packages into a folder named "package/"
       - mv requirements.txt ..
   build:
     commands:
