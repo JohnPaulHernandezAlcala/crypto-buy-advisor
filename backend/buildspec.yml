@@ -3,24 +3,22 @@ phases:
   install:
     runtime-versions:
       python: 3.13    # Use Python 3.13
-  pre_build: # See where we are and move into /backend folder
+  pre_build: # See where we are and move into "/backend" folder
     commands:
       - pwd           # Print the working directory
       - ls -la        # List all files/folders 
-      - cd backend    # Go inside the /backend folder 
-  build: # Set up directory will py file and libraries needed for backend
+      - cd backend    # Go inside the "/backend" folder 
+  build: # Set up directory with py file and libraries needed for backend
     commands:
       - pip install --upgrade pip   # Update pip 
       - mkdir package  # Make "package/" 
-      - mv lambda_function.py package/   # Copy lambda function script into "package/"
-      - mv requirements.txt package/
-      - cd package/
-      - mkdir libraries
+      - mv lambda_function.py package/   # Move lambda function script into "package/"
+      - mv requirements.txt package/     # Move requirements file into "package/"
+      - cd package/                      # Move into "package/"
+      - mkdir libraries                  # Make "libraries/"
       - pip install -r requirements.txt --target libraries   # Install all packages into a folder named "package/"
-      - mv requirements.txt libraries
-      - ls -la        # List all files/folders 
-      - cd ../..      # return to backend/ folder
-      - ls -la        # List all files/folders 
+      - mv requirements.txt libraries    # Move requirements file into "libraries/" for clean directory tree in "package/"
+      - ls -la                           # List all files/folders 
 artifacts:
   files:
-    - backend/package/**/*    # Tell CodeBuild where zip files is and to upload as the build output 
+    - backend/package/**/*    # Tell CodeBuild to take all files recursively in "package/" and upload as the build output 
