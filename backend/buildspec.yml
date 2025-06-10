@@ -16,12 +16,11 @@ phases:
       - ls -la        # List all files/folders 
       - cd package            # Move into "package/" folder
       - zip -r function.zip *   # Zip everything (*) into a zip but not the "package/" directory or top-level folder
-      - unzip -l function.zip | grep lambda_function.py
-      - cat lambda_function.py
       - ls -la        # List all files/folders 
       - mv function.zip ..      # Move zip to backend/
-      - cd ~/
+      - cd ..
       - ls -la        # List all files/folders 
+      - cd ..
       #- mv function.zip ..
       
 artifacts:
