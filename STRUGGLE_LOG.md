@@ -8,10 +8,10 @@ Task: Deploy AWS CodeBuild/CodePipeline
 Estimated Time:
 - 30 minutes (based on AWS documentation/tutorials).
 Actual Time:
-- 3 hours
+- 6 hours
 What Went Wrong:
 - Build failed because ZIP command triggered silent permissions errors
-- Lambda function deployment failed build because
+- Lambda function deployment failed build because import module 'lambda_function' could not be found
 How I Solved It: 
 - Created ZIP file first then moved it to backend/
 
@@ -23,10 +23,11 @@ to
       - mv function.zip ..
   
 Lessons Learned:
-- ZIP can cause silent permissions errors
+- ZIP can cause silent permissions errors with "../"
 - CodePipe needs to find files relative to the repo root
 - Difference between "zip -r function.zip ." and "zip -r function.zip *" is latter excludes zip directory
-- Lambda FUnction Console UI doesn't display zipped lambda_function.py
+- Lambda Function Console UI doesn't display files greater than 3 MB
+- Lambda Function Console handler must match location of file (i.e. backend.lambda_function.lambda_handler since zip file is in backend/)
 
 ----
 
