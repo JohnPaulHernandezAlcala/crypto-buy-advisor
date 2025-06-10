@@ -20,7 +20,9 @@ phases:
       - mv function.zip ..      # Move zip to backend/
       - cd ..
       - ls -la        # List all files/folders 
+      - mv function.zip ..      # Move zip to backend/
       - cd ..
+      - ls -la        # List all files/folders 
       #- mv function.zip ..
       
 artifacts:
