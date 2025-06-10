@@ -8,6 +8,9 @@ Planned functionality:
 - Construct GPT prompt for crypto recommendations and risk warnings
 - Cache responses for cost efficiency
 """
+import os
+print(os.listdir())
+print(os.listdir('/var/task'))
 
 def lambda_handler(event, context):
     # TODO implement
