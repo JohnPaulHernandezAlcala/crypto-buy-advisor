@@ -8,18 +8,18 @@ phases:
       - ls -la        # List all files/folders 
       - cd backend    # Go inside the /backend folder 
       - pip install --upgrade pip   # Update pip 
-      #- mkdir package  # Make "package/" 
-      #- cp lambda_function.py package/   # Copy lambda function script into "package/"
-      #- pip install -r requirements.txt --target package   # Install all packages into a folder named "package/"
+      - mkdir package  # Make "package/" 
+      - cp lambda_function.py package/   # Copy lambda function script into "package/"
+      - pip install -r requirements.txt --target package   # Install all packages into a folder named "package/"
   build:
     commands:
       - ls -la        # List all files/folders 
-      #- cd package            # Move into "package/" folder
-      #- zip -r function.zip *   # Zip everything (*) into a zip but not the "package/" directory or top-level folder
-      #- ls -la        # List all files/folders 
-      #- mv function.zip ..      # Move zip to backend/
-      #- cd ..
-      #- ls -la        # List all files/folders 
+      - cd package            # Move into "package/" folder
+      - zip -r function.zip *   # Zip everything (*) into a zip but not the "package/" directory or top-level folder
+      - ls -la        # List all files/folders 
+      - mv function.zip ..      # Move zip to backend/
+      - cd ..
+      - ls -la        # List all files/folders 
       #- mv function.zip ..      # Move zip to backend/
       #- cd ..
       #- ls -la        # List all files/folders 
@@ -27,5 +27,4 @@ phases:
       
 artifacts:
   files:
-    #- function.zip    # Tell CodeBuild where zip files is and to upload as the build output
-    - backend/lambda_function.py 
+    - backend/function.zip    # Tell CodeBuild where zip files is and to upload as the build output 
