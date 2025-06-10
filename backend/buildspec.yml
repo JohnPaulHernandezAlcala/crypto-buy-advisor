@@ -27,4 +27,4 @@ phases:
       
 artifacts:
   files:
-    - backend/function.zip    # Tell CodeBuild where zip files is and to upload as the build output
+    - function.zip    # Tell CodeBuild where zip files is and to upload as the build output
