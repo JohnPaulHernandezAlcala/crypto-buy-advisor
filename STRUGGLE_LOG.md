@@ -6,6 +6,26 @@ This log documents that journey. Each entry highlights what I was trying to do, 
 
 ---
 
+## 📅 2025-06-011
+**Task**: Fine tune AWS CodePipeline with Webhook event filter
+- Set up continuous deployment (CD) for Lambda backend using CodePipeline but only for lambda_function.py to keep cost low
+
+**Estimated Time**:  
+- 10 minutes (based on AWS documentation/tutorials)
+
+**Actual Time**:  
+- 1.5 hours
+
+**What Went Wrong**:  
+- Had the filepath defined correctly, but I wasn't patient; so I thought it was incorrect and kept trying new patterns:
+
+**How I Solved It**:  
+- Used `"backend/**"` and went to read docs when I realized this path worked.  
+- Set the acutal path to:  
+  `backend/lambda_function.py`
+
+---
+
 ## 📅 2025-06-07 to 2025-06-09  
 **Task**: Deploy AWS CodeBuild/CodePipeline  
 - Set up continuous deployment (CD) for a Lambda backend using CodeBuild and CodePipeline.
