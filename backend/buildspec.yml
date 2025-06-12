@@ -1,3 +1,4 @@
+# Not this will only run if lambda_function.py is modified per the Webhook event filter configured in CodePipeline
 version: 0.2
 phases:
   install:
