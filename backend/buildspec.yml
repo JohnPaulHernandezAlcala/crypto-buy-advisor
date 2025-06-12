@@ -3,14 +3,6 @@ phases:
   install:
     runtime-versions:
       python: 3.13    # Use Python 3.13
-    commands:
-      - echo "Checking if lambda_function.py was touched..."
-      - |
-        if ! grep -q 'backend/lambda_function.py' <<< "$(cat .codebuild_src_dir/change-log.txt)"; then
-          echo "lambda_function.py not changed. Skipping build."
-          exit 0
-        fi
-
   pre_build: # See where we are and move into "/backend" folder
     commands:
       - pwd           # Print the working directory
