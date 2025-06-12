@@ -9,7 +9,7 @@ Planned functionality:
 - Cache responses for cost efficiency
 """
 import json
-print("I stil got into the py file!")
+print("Will only deploy unless this file is changed!")
 
 def lambda_handler(event, context):
     # TODO implement
