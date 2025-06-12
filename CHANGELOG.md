@@ -19,10 +19,17 @@ v2.0.0 → Big major update
 ## [Unreleased]
 - 
 
+## [0.2.2] - 2025-06-11
+
+### Added
+- Webhook event filter to CodePipeline to push updates if lambda_function.py updated
+
+---
+
 ## [0.2.1] - 2025-06-09
 
 ### Added
-- byildspec.yml edited to correct import error for lambda_function.py in lambda function
+- buildspec.yml edited to correct import error for lambda_function.py in lambda function
 
 ---
 
