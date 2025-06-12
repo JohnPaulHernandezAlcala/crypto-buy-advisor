@@ -9,7 +9,7 @@ phases:
       - pwd           # Print the working directory
       - ls -la        # List all files/folders 
       - cd backend    # Go inside the "/backend" folder 
-  build: # Set up directory with py file and libraries needed for backend
+  build: # Set up directory with py file and libraries needed for backend lambda function
     commands:
       - pip install --upgrade pip   # Update pip 
       - mkdir package  # Make "package/" 
