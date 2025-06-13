@@ -4,9 +4,52 @@ A running journal of challenges, missteps, and lessons learned while building th
 
 This log documents that journey. Each entry highlights what I was trying to do, what went wrong, how I fixed it, and what I learned because showing the *process* is just as important as showing the *result*.
 
+## 📅 2025-06-13
+**Task**: Lambda function backend creation and integration with frontend, cloudfront, and api gateway
+- 
+
+**Estimated Time**:  
+- 2 hours (based on AWS documentation/tutorials)
+
+**Actual Time**:  
+- 6 hours
+
+**What Went Wrong**:  
+- 
+
+
+**How I Solved It**:  
+- 
+
 ---
 
-## 📅 2025-06-011
+## 📅 2025-06-11 to 2025-06-12
+**Task**: Set up local environment using VS Code to test frontend and backend integration before pushing to Amplify/CodePipeline
+- Set up local environment, so I can get everything working together before pushing via Git to save costs on Amplify/CodePipeline
+
+**Estimated Time**:  
+- 45 minutes (based on AWS documentation/tutorials)
+
+**Actual Time**:  
+- 6 hours
+
+**What Went Wrong**:  
+- Packages installed from requirements.txt were not being recongized
+- Virtual environment would not set into place even though the UI in VS Code showed it was
+
+
+**How I Solved It**:  
+- Restore terminal to command prompt because trying to default it to bash was causing path confusions and errors
+- Deleted onld virutal environment and created a new one
+- Closed and opened the repo in VS Code from the "Open Folder" option at the parent level crypto-buy-advisor; otherwise venv was not detected
+- Set default interperter to "..\crypto-buy-advisor\.venv-crypto-buy-advisor\Scripts\python.exe"
+- Reinstalled requirements.txt file
+
+---
+
+---
+
+## 📅 2025-06-10
 **Task**: Fine tune AWS CodePipeline with Webhook event filter
 - Set up continuous deployment (CD) for Lambda backend using CodePipeline but only for lambda_function.py to keep cost low
 
@@ -17,7 +60,7 @@ This log documents that journey. Each entry highlights what I was trying to do, 
 - 1.5 hours
 
 **What Went Wrong**:  
-- Had the filepath defined correctly, but I wasn't patient; so I thought it was incorrect and kept trying new patterns:
+- Had the filepath defined correctly, but I wasn't patient; so I thought it was incorrect and kept trying new patterns.
 
 **How I Solved It**:  
 - Used `"backend/**"` and went to read docs when I realized this path worked.  
