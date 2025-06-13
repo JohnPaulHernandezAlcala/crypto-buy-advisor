@@ -38,17 +38,17 @@ Notes about this diagram:
 
 
 ### Stack (So far):
-- AWS S3 (cloudwatch logs)
-- AWS Lambda (scaffolded)
+- ✔️ AWS S3 (cloudwatch logs)
+- ✔️ AWS Lambda (scaffolded)
 - AWS CloudFront (possibly cache for lambda)
 - API Gateway (planned)
 - AWS Secrets Manager (planned)
 - OpenAI GPT API (planned)
 - CoinGecko API (planned)
-- AWS CodePipeline (GitHub integration)
+- ✔️ AWS CodePipeline (GitHub integration)
 - ✔️ AWS Amplify (GitHub integration)
-- AWS CodeBuild (GitHub integration)
-- CloudWatch Logs/Alarms (planned)
+- ✔️ AWS CodeBuild (GitHub integration)
+- ✔️ CloudWatch Logs/Alarms (planned)
 - AWS WAF (wishlist)
 
 ---
@@ -56,7 +56,7 @@ Notes about this diagram:
 ## DevOps & CI/CD Setup
 
 CryptoBuyAdvisor is integrated with AWS CodePipeline (backend) and AWS Amplify (frontend) to enable continuous delivery.
-- GitHub → CodePipeline → Lambda Deployment (planned)
+- GitHub → CodePipeline/CodeBuild → Lambda Deployment (planned)
   > *A change to `/backend/lambda_function.py` will automatically trigger redeployment once the pipeline is active.*
   
 - GitHub → AWS Amplify → Website/App front (planned)
@@ -87,10 +87,10 @@ CryptoBuyAdvisor was designed to stay fully within the AWS Free Tier during MVP 
 Input: $0.0005 per 1,000 tokens.
 Output: $0.0015 per 1,000 tokens.
 See working prompt here!
-> GPT API: $1.72/month
+> GPT API: $4.72/month
 
 ### Total
-> **$5/month**
+> **$8/month**
 
 You can review the official AWS Pricing Calculator estimate here: [AWS Price Estimate (PDF)](./docs/AWS-Pricing-Estimate-05272025.pdf)
 
