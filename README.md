@@ -87,10 +87,10 @@ CryptoBuyAdvisor was designed to stay fully within the AWS Free Tier during MVP 
 Input: $0.0005 per 1,000 tokens.
 Output: $0.0015 per 1,000 tokens.
 See working prompt here!
-> GPT API: $4.72/month
+> GPT API: $5/month
 
 ### Total
-> **$8/month**
+> **$8.28/month**
 
 You can review the official AWS Pricing Calculator estimate here: [AWS Price Estimate (PDF)](./docs/AWS-Pricing-Estimate-05272025.pdf)
 
