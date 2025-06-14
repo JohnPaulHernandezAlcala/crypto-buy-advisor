@@ -6,7 +6,7 @@ from botocore.exceptions import ClientError
 import openai
 from dotenv import load_dotenv
 
-
+# IT WORKED!!!!
 
 
 def fetch_top_5_cryptos():
