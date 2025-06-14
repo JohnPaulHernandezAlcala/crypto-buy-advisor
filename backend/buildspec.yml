@@ -18,7 +18,7 @@ phases:
       #- cd package/                      # Move into "package/"
       #- mkdir libraries                  # Make "libraries/"
       #- pip install -r requirements.txt --target libraries/   # Install all packages into a folder named "libraries/"
-      - pip install -r requirements.txt -- target backend/
+      - pip install -r requirements.txt --target backend/
       #- mv requirements.txt libraries    # Move requirements file into "libraries/" for clean directory tree in "package/"
       #- mv requirements.txt package/
       - ls -la                           # List all files/folders 
