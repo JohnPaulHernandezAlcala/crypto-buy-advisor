@@ -31,4 +31,5 @@ artifacts:
   files:
     #- backend/package/**/*    # Tell CodeBuild to take all files recursively in "package/" and upload as the build output 
     - my_deployment_package.zip
-    base-directory: backend
+  base-directory: 
+    - backend
