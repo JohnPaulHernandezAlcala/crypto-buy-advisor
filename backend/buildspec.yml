@@ -19,7 +19,7 @@ phases:
       #- mkdir libraries                  # Make "libraries/"
       #- pip install -r requirements.txt --target libraries/   # Install all packages into a folder named "libraries/"
       - pip install -r requirements.txt --target package/
-      - cd pakcage
+      - cd package
       - zip -r ../my_deployment_package.zip .
       - cd ..
       - zip my_deployment_package.zip lambda_function.py
