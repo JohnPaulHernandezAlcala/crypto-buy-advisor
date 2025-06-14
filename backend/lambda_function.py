@@ -7,7 +7,6 @@ import openai
 from dotenv import load_dotenv
 
 
-
 def fetch_top_5_cryptos():
     """
     Fetches the top 5 cryptocurrencies by market cap from CoinGecko.
