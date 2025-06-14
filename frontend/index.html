@@ -20,11 +20,104 @@
         p {
             font-size: 1.2em;
         }
+        .crypto-list {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+        .coin {
+            background: #1a1a1a;
+            padding: 12px 24px;
+            border-radius: 8px;
+            width: 80%;
+            max-width: 400px;
+        }
+        #gptAdvice {
+            background-color: #1a1a1a;
+            border-radius: 12px;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 24px;
+            text-align: left;
+            color: #ccc;
+            box-shadow: 0 0 12px rgba(0, 255, 208, 0.2);
+        }
+
+        #gptAdvice h2 {
+            margin-top: 0;
+            margin-bottom: 12px;
+            color: #00ffd0;
+        }
     </style>
 </head>
 <body>
     <h1>CryptoBuyAdvisor</h1>
-    <p>An ethical, AI-powered crypto insight tool is coming soon.</p>
-    <p>Built with AWS Free Tier + GPT (hosting by AWS Amplify).</p>
+    <p>An ethical, AI-powered crypto insight tool is here!</p>
+    <p>Built with AWS Free Tier + GPT 3.5-Turbo (hosting by AWS Amplify).</p>
+
+    <p id="loadingMessage">Loading crypto data...</p>
+
+    <div class="crypto-list" id="cryptoList">
+    <!-- Crypto data will appear here -->
+    </div>
+
+    <div id="gptAdvice">
+     <!-- GPT recommendation will be injected here -->
+    </div>
+
+
+    <script>
+      fetch('./mock_crypto.json')
+        .then(res => res.json())
+        .then(data => {
+          // Remove loading message
+          const loadingMessage = document.getElementById('loadingMessage');
+          if (loadingMessage) {
+            loadingMessage.remove();
+          }
+          // Assuming data structure matches the expected format
+          const coins = data.coins; // data.coins is your crypto list
+          const gptAdvice = data.gpt_recommendation; // GPT advice
+          
+          if (!coins || !Array.isArray(coins)) throw new Error("Invalid or missing coin data.");
+          if (!gptAdvice) throw new Error("Missing GPT recommendation.");
+          
+          // Display coins
+          const listContainer = document.getElementById('cryptoList');
+          coins.forEach(coin => {
+            const coinDiv = document.createElement('div');
+            coinDiv.className = 'coin';
+            coinDiv.textContent = `${coin.name} (${coin.symbol.toUpperCase()}): $${coin.current_price.toLocaleString()}`;
+            listContainer.appendChild(coinDiv);
+          });
+
+          // Display GPT response
+          const gptContainer = document.getElementById('gptAdvice');
+          const gptTitle = document.createElement('h2');
+          gptTitle.textContent = "AI Crypto Insight";
+          gptTitle.style.color = "#00ffd0";
+
+          const gptText = document.createElement('p');
+          gptText.textContent = gptAdvice;
+          gptText.style.whiteSpace = 'pre-line'; // keep line breaks
+
+          gptContainer.appendChild(gptTitle);
+          gptContainer.appendChild(gptText);
+
+       })
+        .catch(err => {
+          const listContainer = document.getElementById('cryptoList');
+          listContainer.innerHTML = `<p style="color: red;">Error loading data</p>`;
+          
+          // GPT error fallback
+          document.getElementById('gptAdvice').innerHTML =
+            `<p style="color: red;">Error loading GPT insight</p>`;
+
+
+          console.error('Error fetching crypto data:', err);
+      });
+    </script>
 </body>
 </html>

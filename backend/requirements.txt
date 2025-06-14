@@ -1,3 +1,5 @@
 openai
 requests
 coingecko-python
+boto3
+python-dotenv

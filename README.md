@@ -32,7 +32,7 @@ Notes about this diagram:
 
 🔗 Live Demo
 
-👉 [Click here to view the hosted MVP frontend]([http://crypto-buy-advisor-site.s3-website.us-east-2.amazonaws.com](https://main.d12k8nnoyk6p4v.amplifyapp.com/))
+👉 [Click here to view the hosted MVP frontend](https://main.d12k8nnoyk6p4v.amplifyapp.com/)
 
 
 
