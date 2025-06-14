@@ -19,6 +19,7 @@ phases:
       #- mkdir libraries                  # Make "libraries/"
       #- pip install -r requirements.txt --target libraries/   # Install all packages into a folder named "libraries/"
       - pip install -r requirements.txt --target package/
+      - mv lambda_function.py package/
       - cd package
       - zip -r ../my_deployment_package.zip .
       - cd ..
@@ -29,4 +30,5 @@ phases:
 artifacts:
   files:
     #- backend/package/**/*    # Tell CodeBuild to take all files recursively in "package/" and upload as the build output 
-    - backend/my_deployment_package.zip
+    - my_deployment_package.zip
+    base-directory: backend
