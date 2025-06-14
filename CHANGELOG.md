@@ -19,6 +19,16 @@ v2.0.0 → Big major update
 ## [Unreleased]
 - 
 
+## [1.0.0] - 2025-06-14
+
+### Added
+- Complete backend logic
+- Frontend formatting and crypto data importing
+- API gateway integration connecting front and backend
+- OpenAI API stored in secrets manager
+
+---
+
 ## [0.2.2] - 2025-06-11
 
 ### Added
