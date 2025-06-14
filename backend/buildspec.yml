@@ -23,7 +23,7 @@ phases:
       - cd package
       - zip -r ../my_deployment_package.zip .
       - cd ..
-      - zip my_deployment_package.zip lambda_function.py
+      #- zip my_deployment_package.zip lambda_function.py
       #- mv requirements.txt libraries    # Move requirements file into "libraries/" for clean directory tree in "package/"
       #- mv requirements.txt package/
       - ls -la                           # List all files/folders 
