@@ -6,8 +6,6 @@ from botocore.exceptions import ClientError
 import openai
 from dotenv import load_dotenv
 
-# IT WORKED!!!!
-
 
 def fetch_top_5_cryptos():
     """
@@ -88,10 +86,10 @@ def get_secret():
         # For a list of exceptions thrown, see
         # https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_GetSecretValue.html
         raise e
+        
+    secret_dict = json.loads(get_secret_value_response['SecretString'])
 
-    secret = get_secret_value_response['SecretString']
-
-    return secret
+    return secret_dict["OPENAI_API_KEY"]
 
 
 def gpt_recommendation(prompt):
