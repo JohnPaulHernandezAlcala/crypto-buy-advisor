@@ -4,7 +4,7 @@ A running journal of challenges, missteps, and lessons learned while building th
 
 This log documents that journey. Each entry highlights what I was trying to do, what went wrong, how I fixed it, and what I learned because showing the *process* is just as important as showing the *result*.
 
-## 📅 2025-06-14
+## 📅 2025-06-13
 **Task**: Lambda function backend creation and integration with frontend, api gateway, and secret manager
 - Do as many as possible backend and frontend functions and integrations locally, then push to github for pushing to AWS via amplify/codepipeline; from here, integrate api gateway and secrets manager.
 
