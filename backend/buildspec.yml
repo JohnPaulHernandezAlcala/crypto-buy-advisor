@@ -12,15 +12,15 @@ phases:
   build: # Set up directory with py file and libraries needed for backend lambda function
     commands:
       - pip install --upgrade pip   # Update pip 
-      - mkdir package  # Make "package/" 
-      - mv lambda_function.py package/   # Move lambda function script into "package/"
+      #- mkdir package  # Make "package/" 
+      #- mv lambda_function.py package/   # Move lambda function script into "package/"
       #- mv requirements.txt package/     # Move requirements file into "package/"
       #- cd package/                      # Move into "package/"
       #- mkdir libraries                  # Make "libraries/"
       #- pip install -r requirements.txt --target libraries/   # Install all packages into a folder named "libraries/"
-      - pip install -r requirements.txt --target package/
+      - pip install -r requirements.txt
       #- mv requirements.txt libraries    # Move requirements file into "libraries/" for clean directory tree in "package/"
-      - mv requirements.txt package/
+      #- mv requirements.txt package/
       - ls -la                           # List all files/folders 
 artifacts:
   files:
