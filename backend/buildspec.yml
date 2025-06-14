@@ -25,3 +25,4 @@ phases:
 artifacts:
   files:
     - backend/package/**/*    # Tell CodeBuild to take all files recursively in "package/" and upload as the build output 
+    - backend/**/*
