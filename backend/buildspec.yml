@@ -13,22 +13,10 @@ phases:
     commands:
       - pip install --upgrade pip   # Update pip 
       - mkdir package  # Make "package/" 
-      #- mv lambda_function.py package/   # Move lambda function script into "package/"
-      #- mv requirements.txt package/     # Move requirements file into "package/"
-      #- cd package/                      # Move into "package/"
-      #- mkdir libraries                  # Make "libraries/"
-      #- pip install -r requirements.txt --target libraries/   # Install all packages into a folder named "libraries/"
-      - pip install -r requirements.txt --target package/
-      - mv lambda_function.py package/
-      #- cd package
-      #- zip -r ../my_deployment_package.zip .
-      #- cd ..
-      #- zip my_deployment_package.zip lambda_function.py
-      #- mv requirements.txt libraries    # Move requirements file into "libraries/" for clean directory tree in "package/"
-      #- mv requirements.txt package/
+      - pip install -r requirements.txt --target package/  # Install all packages into a folder named "package/"
+      - mv lambda_function.py package/   # Move lambda function script into "package/"
       - ls -la                           # List all files/folders 
 artifacts:
   files:
-    #- backend/package/**/*    # Tell CodeBuild to take all files recursively in "package/" and upload as the build output 
-    - '**/*'
+    - '**/*' # Tell CodeBuild to take all files recursively in "package/" and zip them up into an artifact output zip file
   base-directory: backend/package
