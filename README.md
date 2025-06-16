@@ -37,19 +37,19 @@ Notes about this diagram:
 
 
 
-### Stack (So far):
+### Stack:
 - ✔️ AWS S3 (cloudwatch logs)
 - ✔️ AWS Lambda (scaffolded)
-- AWS CloudFront (possibly cache for lambda)
-- API Gateway (planned)
-- AWS Secrets Manager (planned)
+- ✔️ API Gateway
+- ✔️ AWS Secrets Manager
 - ✔️ OpenAI GPT API
 - ✔️ CoinGecko API
 - ✔️ AWS CodePipeline (GitHub integration)
 - ✔️ AWS Amplify (GitHub integration)
 - ✔️ AWS CodeBuild (GitHub integration)
 - ✔️ CloudWatch Logs/Alarms (planned)
-- AWS WAF (wishlist)
+- AWS WAF (wishlist--expensive)
+- AWS CloudFront (future usage if lots of API usage)
 
 ---
 
@@ -110,8 +110,5 @@ MVP designed to stay in the free tier, so management and cost monitioring servic
 
 ## Coming Soon
 
-- Live crypto query interface
 - Risk scoring system
-- GPT-powered natural-language recommendations
 - Trust score display
-- Secure & scalable deployment pipeline
