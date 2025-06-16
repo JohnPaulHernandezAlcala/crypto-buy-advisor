@@ -39,7 +39,7 @@ Notes about this diagram:
 
 ### Stack:
 - ✔️ AWS S3 (cloudwatch logs)
-- ✔️ AWS Lambda (scaffolded)
+- ✔️ AWS Lambda
 - ✔️ API Gateway
 - ✔️ AWS Secrets Manager
 - ✔️ OpenAI GPT API
@@ -47,7 +47,7 @@ Notes about this diagram:
 - ✔️ AWS CodePipeline (GitHub integration)
 - ✔️ AWS Amplify (GitHub integration)
 - ✔️ AWS CodeBuild (GitHub integration)
-- ✔️ CloudWatch Logs/Alarms (planned)
+- ✔️ CloudWatch Logs/Alarms
 - AWS WAF (wishlist--expensive)
 - AWS CloudFront (future usage if lots of API usage)
 
