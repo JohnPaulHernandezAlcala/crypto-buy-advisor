@@ -110,3 +110,4 @@ MVP designed to stay in the free tier, so management and cost monitioring servic
 
 - Risk scoring system
 - Trust score display
+- And more! See the [project board](https://github.com/users/JohnPaulHernandezAlcala/projects/6)
