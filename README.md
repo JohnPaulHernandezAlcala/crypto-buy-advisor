@@ -71,8 +71,6 @@ CryptoBuyAdvisor is integrated with AWS CodePipeline (backend) and AWS Amplify (
 
 I recently passed the AWS Certified Solutions Architect – Associate exam. This project puts those concepts into practice. My goal is to build something intelligent, scalable, and ethically responsible.
 
-Check back soon for live demos, trust scores, and a GPT-powered crypto advisor.
-
 
 ---
 
